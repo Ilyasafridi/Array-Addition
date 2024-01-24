@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array of Addition </title>
+</head>
+<body>
+    
+<center>
+
+<b> <i> <h1> Array of Addition </h1> </i> </b>
+
+</center>
+
+</body>
+<script>
+
+
+function sumArray(a, b) {
+      var c = [];
+      for (var i = 0; i < Math.max(a.length, b.length); i++) {
+        c.push((a[i] || 0) + (b[i] || 0));
+      }
+      return c;
+}
+
+var a = [1, 2, 3, 4];
+var b = [5, 6, 7, 8];
+console.log( sumArray(a,b) );
+
+
+</script>
+</html>
